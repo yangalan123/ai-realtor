@@ -157,9 +157,8 @@ document.addEventListener('DOMContentLoaded', function () {
 // Function to render standalone PDFs (not in carousels)
 function renderStandalonePDFs() {
     const standalonePDFs = [
-        { url: 'figures/AI-realtor.pdf', canvasId: 'pipeline-canvas' },
         { url: 'figures/elo_ratings_grouped.pdf', canvasId: 'elo-canvas' },
-        { url: 'figures/model_hallucination_comparison.pdf', canvasId: 'hallucination-canvas' }
+        { url: 'figures/hallucination_checks_full/faithful_hard_soft_combined_comparison.pdf', canvasId: 'hallucination-canvas' }
     ];
 
     pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js';
